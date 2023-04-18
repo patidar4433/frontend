@@ -7,6 +7,818 @@
   pointer-events: none;
 }
 
+/* modal  css*/
+.modal-content {
+  border-radius: 0px !important;
+  width: 70% !important;
+  margin: auto !important;
+}
+
+.msgbody {
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+}
+
+.update_btn {
+  background-color: orange !important;
+  border-radius: 25px !important;
+  border-color: orange !important;
+}
+
+.update_input {
+  border: 0 !important;
+  background-color: #ffe0a8 !important;
+  border-radius: 0 !important;
+  font-size: 14px !important;
+  outline: none !important;
+}
+
+.update_label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: silver !important;
+}
+/* modal  css*/
+
+/* Home page and navbar css starts */
+.home_bg {
+  background: linear-gradient(-150deg, #222222 15%, #373737 70%, #3c4859 94%);
+  height: 600px;
+}
+
+.sign img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.sign1 img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0 !important;
+}
+
+Link {
+  padding: 5px 10px !important;
+}
+
+.main_header_bg {
+  background: linear-gradient(
+    357deg,
+    #222222 15%,
+    #373737 70%,
+    #3c4859 94%
+  ) !important;
+  padding: 0 !important;
+  height: 44px;
+}
+
+.main_header_bg1 {
+  /* background: linear-gradient(357deg, #222222 15%, #373737 70%, #3c4859 94%) !important; */
+  background: #fff;
+  padding: 0 !important;
+  height: 44px;
+}
+
+.header_bg {
+  /* background-color: #323c3c; */
+  border-radius: 30px;
+}
+
+.sign1 {
+  color: #ffffff !important;
+  font-weight: 300;
+  padding-left: 10px;
+  font-size: 20px !important;
+  font-weight: 400;
+}
+
+.sign {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  padding-left: 10px;
+  font-size: 20px !important;
+  font-weight: 400;
+}
+
+.navbar-brand span {
+  color: rgb(241, 168, 33) !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  font-weight: 400;
+}
+
+.nav_menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 10px 10px;
+  margin-right: 5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nav_menu a:hover {
+  color: rgb(255, 184, 54);
+  transition: 0.4s all;
+}
+
+.nav_menu_2 a {
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 10px 10px;
+  margin-right: 5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.profile {
+  padding: 0 !important;
+  font-size: 14px !important;
+}
+
+.nav_menu_2 a:hover {
+  color: rgb(255, 184, 54);
+  transition: 0.4s all;
+}
+
+.nav_menu span {
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background: rgb(255, 184, 54);
+  color: #000;
+  padding: 2px 10px;
+  margin-left: 5px;
+}
+
+.nav_menu_2 .userLogin {
+  padding: 5px 10px !important;
+  margin-right: 0;
+  /* text-align: center; */
+}
+
+.nav_menu_2 .userLogin:hover {
+  background-color: orange;
+}
+
+.nav_menu_2 .userLogin a:hover {
+  color: #fff;
+}
+
+.nav_menu_2 .userLogin a {
+  padding: 0 !important;
+  margin: auto !important;
+  font-size: 14px !important;
+}
+
+.create_ac:hover {
+  background: #17807d;
+  transition: 0.4s all;
+  color: #ffffff !important;
+}
+
+.navigation {
+  flex-grow: 0 !important;
+}
+
+.banner_div {
+  margin-top: -76px;
+}
+
+.banner_content {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.banner_div h1 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.banner_div p {
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.banner_div button {
+  margin-top: 30px;
+  background: #1da09c;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 0;
+  padding: 5px 15px;
+}
+
+.banner_div button:hover {
+  background: #17807d;
+  transition: 0.4s all;
+}
+
+.explore_div {
+  line-height: 1.7;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  margin-left: 15px;
+}
+
+.explore_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.explore_div h1 {
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.explore p {
+  color: gray;
+  opacity: 0.7;
+  text-align: end;
+}
+
+.explore button {
+  border: none;
+  background-color: #1da09c;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #fff;
+  float: right;
+}
+
+.q_div {
+  border-right: 2px solid #e6e6e6;
+  padding: 10px 20px 10px 10px;
+  text-align: left;
+}
+
+.q_heading h1 {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: cursive;
+  color: #1da09c;
+  font-size: 30px;
+  text-align: left;
+}
+
+.q_para p {
+  color: gray;
+  opacity: 0.7;
+  text-align: left;
+}
+
+.q_btn button {
+  border: none;
+  background-color: transparent;
+  color: #167b78;
+  float: left;
+}
+
+.com_div {
+  padding: 10px 20px 10px 10px;
+  text-align: left;
+}
+
+.d_heading h1 {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 20px 0px 20px 0px;
+  font-family: cursive;
+  color: #1da09c;
+  font-size: 30px;
+  text-align: center;
+}
+
+.d_para p {
+  color: gray;
+  opacity: 0.7;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+table tr th,
+table tr td {
+  font-weight: 300;
+  font-size: 14px;
+  color: #3c3c4399;
+  font-weight: 400;
+}
+
+table tr td {
+  font-weight: 300;
+  font-size: 14px;
+  color: #03030399;
+  font-weight: 400;
+}
+
+/* home page and navbar css ends */
+
+/* MyProfile css starts */
+.profile_container {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.profile_image_div {
+  height: 125px;
+  width: 125px;
+  display: grid;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.profile_image button {
+  width: 125px;
+  border: 0;
+  border-radius: 5px;
+  float: left;
+  margin-top: 5px;
+  background-color: orange;
+  color: #fff;
+}
+
+.label {
+  position: relative;
+}
+
+.label :first-child {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.rank {
+  display: grid;
+  margin-top: 5px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+.rank span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.main_pro_div {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px -5px rgb(165 160 160);
+}
+
+.user_detail {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px -5px rgb(165 160 160);
+  padding: 10px;
+}
+
+.details {
+  border: 1px solid #bababa;
+  border-radius: 10px;
+  height: 100%;
+  text-align: left;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details div span {
+  color: rgb(131, 87, 5);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.edit-button :first-child {
+  border: 1px solid orange;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  color: #fff;
+  background-color: orange;
+}
+
+.ant-progress-circle-path {
+  stroke: orange !important;
+}
+
+.ant-progress-bg {
+  background-color: green !important;
+}
+
+.progress_div {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.progress_line {
+  padding: 10px;
+  border: 1px solid #bababa;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.progress_line span {
+  font-size: 14px;
+  color: #17807d;
+  font-weight: 400;
+}
+
+.profile_div {
+  border: 1px solid #bababa;
+  margin: 10px auto !important;
+  border-radius: 10px;
+}
+
+.radial_div {
+  border: 1px solid #bababa;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.radial_div span {
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+  color: #17807d;
+  font-weight: 400;
+}
+
+/* MyProfile css ends */
+
+/* Login page css starts*/
+.login_div {
+  background: rgba(158, 158, 158, 0.1);
+  position: relative;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.login_box {
+  background-color: #ffffff;
+  /* position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0; */
+  height: 90%;
+  margin: 10px auto;
+  width: 400px;
+  padding: 20px 20px 10px 20px;
+  border-radius: 3px;
+  box-shadow: -1px -1px 15px #c4c4c4;
+}
+
+.login_page_logo img {
+  width: 30px;
+  height: 30px;
+  border: 2px solid orange;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.login_page_brand {
+  color: #000000 !important;
+  font-weight: 500;
+  /* padding-left: 10px; */
+  font-size: 15px !important;
+}
+
+.login_page_brand span {
+  color: #ffa600 !important;
+  font-weight: 500;
+  /* padding-left: 10px; */
+  font-size: 15px !important;
+}
+
+.login_input {
+  padding: 10px 0px;
+}
+
+.login_input .input {
+  color: #546e7a;
+  border: 1px solid #cfd8dc;
+  border-radius: 3px;
+  font-weight: 300;
+  padding: 8.85px 13px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  transition: 0.4s all;
+}
+
+.login_input form span {
+  color: rgb(222, 6, 6);
+  text-align: left !important;
+}
+
+.login_input Button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #b0bec5;
+  border-radius: 3px;
+  background: linear-gradient(215deg, #546e7a, #37474f);
+  width: 100%;
+}
+
+.login_input .input-button {
+  margin: auto;
+  color: #fff !important;
+}
+
+.forgot_signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.forgot_signup span {
+  color: #546e7a;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.bottom_signin span {
+  color: #546e7a;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* Login page css ends */
+
+/* Explore and Card css starts */
+.card_div {
+  margin: 40px auto;
+  width: 90% !important;
+}
+
+.card_div h3 {
+  color: rgba(0, 0, 0, 0.65);
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card_div button {
+  border: 0;
+  border-radius: 50%;
+  padding: 10px 20px 15px 22px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  bottom: 65px;
+  border: 2px solid #c6c6c6;
+}
+
+.card_div button:hover {
+  box-shadow: -1px -1px 15px #666565;
+  transition: all, 0.5s;
+}
+
+.c_body {
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.card-image {
+  width: 318px;
+  height: 199px;
+}
+
+.c_title {
+  margin-top: 10px !important;
+  color: white;
+  text-shadow: 1px 1px 6px #000;
+}
+
+.anticon {
+  vertical-align: 0 !important;
+}
+
+.card_slider {
+  margin: 0px;
+}
+
+.main_card {
+  width: 18rem;
+  border: 0;
+  border-radius: 25px !important;
+  /* box-shadow: 1px 1px 10px #666565; */
+}
+
+.main_card:hover {
+  box-shadow: 1px 1px 20px #b7b3b3;
+  transform: scale(1.1);
+  transition: all 0.6s;
+  border-radius: 25px;
+}
+
+.card_heading {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  color: #fff;
+}
+
+.main_card img {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+/* Card css ends */
+
+/* problems page css starts */
+.pro_card {
+  background-color: #17807d;
+  width: 150px;
+  height: 150px;
+}
+
+.p_prob {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: left;
+}
+
+.que_btn {
+  text-decoration: none;
+  color: #000;
+}
+
+/* problems page css ends*/
+
+/* Developer css starts */
+#UNIQUE_ID_OF_DIV {
+  width: 100% !important;
+}
+
+.codeEditor_div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #ffffff;
+}
+
+.language select,
+.theme_btn select {
+  font-size: 14px;
+  /* background-color: #292929; */
+  color: #e1a305;
+  border-radius: 5px;
+  border: 1px solid #e1a305;
+  padding: 2px 5px;
+  outline: none;
+}
+
+.run_btn button {
+  border-color: green !important;
+  background-color: green !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+  border-radius: 15px !important;
+  padding: 4px 10px !important;
+  align-items: center;
+  display: flex;
+}
+
+.submit_btn button {
+  border-color: #e1a305 !important;
+  /* background-color: #292929 !important; */
+  color: #e1a305 !important;
+  font-weight: 400 !important;
+  border-radius: 15px !important;
+  padding: 4px 8px !important;
+  align-items: center;
+  display: flex;
+}
+
+.developer_div {
+  background-color: rgba(158, 158, 158, 0.1);
+  padding: 20px 5px;
+}
+
+.dev_1 {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  text-align: left;
+  overflow: scroll;
+  height: 300px;
+}
+
+.dev_1 h4 {
+  padding: 5px 10px;
+  color: #6e6a6a;
+}
+
+.gutter:hover {
+  cursor: col-resize;
+}
+
+.dev_1 p {
+  color: #434141;
+  font-size: 14px;
+}
+
+.dev_1_result {
+  background-color: #ffffff;
+  overflow: scroll;
+  height: 250px;
+  padding: 10px;
+}
+
+.dev_1_result hr {
+  margin: 2px auto !important;
+  width: 100%;
+}
+
+.dev_1_result span {
+  float: left;
+  font-weight: 500;
+  color: darkgreen;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.dev_heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: left;
+}
+
+/* Developer css ends */
+
+/* Footer css starts */
+.footer {
+  padding: 10px 0px;
+  border-top: 1px solid #e3e3e3;
+  position: relative;
+}
+
+.footer_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright {
+  opacity: 0.5;
+}
+
+.services {
+  opacity: 0.8;
+}
+
+hr {
+  margin: 20px 20px !important;
+}
+
+/* Footer css ends */
+
+/* media query */
+@media screen and (max-width: 992px) {
+  .main_header_bg {
+    border-bottom: 1px solid rgb(255, 255, 255) !important;
+  }
+}
+
+/*  */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-float infinite 3s ease-in-out;
@@ -20,20 +832,4 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }

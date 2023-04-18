@@ -44,3 +44,173 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+******************************************************************************************
+********** registration page with formik and yup npm pachage ****************
+******************************************************************************************
+import React, { useState } from "react";
+import logo from "../img/logo.png";
+import axios from "axios";
+import { useFormik } from "formik";
+import { signUpSchema } from "../schemas";
+
+const initialValues = {
+  username: "",
+  password: "",
+  confirmPassword: "",
+  email: "",
+};
+
+const Signup = () => {
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
+    initialValues: initialValues,
+    validationSchema: signUpSchema,
+    onSubmit: (values, action) => {
+      console.log("values", values);
+      action.resetForm();
+    },
+  });
+
+  console.log("errors", errors);
+
+  // const [username, setUsername] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [confirmPassword, setConfirmPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [data, setData] = useState({
+  //   username,
+  //   password,
+  //   confirmPassword,
+  //   email,
+  // });
+  // console.log("data", data)
+  // const handleSignUp = (e) => {
+  //   setData({
+  //     username: username,
+  //     password: password,
+  //     confirmPassword: confirmPassword,
+  //     email: email,
+  //   });
+  //   setUsername(e.target.value);
+  //   setPassword(e.target.value);
+  //   setConfirmPassword(e.target.value);
+  //   setEmail(e.target.value);
+
+  //   axios
+  //     .post("http://localhost:4000/signup", {
+  //       username,
+  //       password,
+  //       confirmPassword,
+  //       email,
+  //     })
+  //     .then((res) => {
+  //       if (res.data.status === 1) {
+  //         alert(res.data.message);
+  //       } else {
+  //         alert(res.data.message);
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       console.log("error", err);
+  //     });
+  // };
+
+  return (
+    <div className="login_div">
+      <div className="login_box">
+        <div style={{ marginBottom: "20px" }}>
+          <div className="login_page_logo">
+            <img src={logo} alt="" />
+          </div>
+          <div className="login_page_brand">
+            <span>CodeUNIT</span>
+          </div>
+        </div>
+        <div className="login_input">
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              value={values.username}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              // onChange={(e) => setUsername(e.target.value)}
+              // value={username}
+            />
+            <br />
+            { errors.username && touched.username ? <span>{errors.username}</span> : null }
+            <br />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={values.password}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              // onChange={(e) => setPassword(e.target.value)}
+              // value={password}
+            />
+            <br />
+            { errors.password && touched.password ? <span>{errors.password}</span> : null }
+            <br />
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm password"
+              value={values.confirmPassword}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              // onChange={(e) => setConfirmPassword(e.target.value)}
+              // value={confirmPassword}
+            />
+            <br />
+            { errors.confirmPassword && touched.confirmPassword ? <span>{errors.confirmPassword}</span> : null }
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail address"
+              value={values.email}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              // onChange={(e) => setEmail(e.target.value)}
+              // value={email}
+            />
+            <br />
+            { errors.email && touched.email ? <span>{errors.email}</span> : null }
+            <br />
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+        <div className="bottom_signin">
+          <span style={{ opacity: "0.5" }}>Have an account? </span>
+          <span>Sign In</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Signup;
+************************************************************************************
+************************************************************************************
+
+************************************************************************************
+************ schemas folder with file index.jsx ***************
+************************************************************************************
+
+import * as Yup from "yup";
+
+export const signUpSchema = Yup.object({
+  username: Yup.string().min(2).max(25).required("Please enter your name"),
+  email: Yup.string().email().required("Please enter your email"),
+  password: Yup.string().min(6).required("Please enter your password"),
+  confirmPassword: Yup.string()
+    .required()
+    .oneOf([Yup.ref("password"), null], "Password must be matched"),
+});
+
+**************************************************************************************
+**************************************************************************************
