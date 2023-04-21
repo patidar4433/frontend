@@ -784,6 +784,22 @@ table tr td {
 
 /* Developer css ends */
 
+/* swiper slide starts */
+.slide {
+  margin-right: 0px;
+  width: 150px;
+}
+
+.slide img {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.ant-card-body {
+  padding: 10px !important;
+}
+/* swiper slide ends*/
+
 /* Footer css starts */
 .footer {
   padding: 10px 0px;
