@@ -1,297 +1,63 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination } from "swiper";
+import React from "react";
+
 const SkillCard = (props) => {
-  console.log("props", props);
+  const {title, description} = props;
   return (
-   
-    <Swiper
-        slidesPerView="auto"
-        spaceBetween={30}
-        modules={[Pagination]}
-        className="mySwiper"
+    <div>
+      <div
+        className="swiperimg"
         style={{
-          width: "75%",
-          marginTop: "90px",
-          
-          padding: "0px 0px 0px 0px",
+          backgroundColor: "black",
+          width: "160px",
+          height: "160px",
+          color: "white",
+          borderRadius: "12px",
+          opacity:"0.5"
         }}
       >
-        <SwiperSlide
-          className="swiperbox"
-          style={{
-         
-            width: "160px",
-            height: "250px",
-            borderRadius: "12px",
-          }}
-        >
-          <div className="swiperimg"
-            style={{
-              backgroundColor: "black",
-              width: "160px",
-              height: "160px",
-              color: "white",
-              borderRadius: "12px",
-            }}
-          >
-            slide1
-          </div>
-          <div
-            style={{
-              width: "160px",
-              textAlign: "center",
-              paddingTop: "10px",
-              color: "black",
-            }}
-          >
-            ahdfahsfsdfdfdfdsg
-            <br />
-            fdfsddsfsd
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          className="swiperbox"
-          style={{
-          
-            width: "160px",
-            height: "250px",
-            borderRadius: "12px",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "black",
-              width: "160px",
-              height: "160px",
-              color: "white",
-              borderRadius: "12px",
-            }}
-          >
-            slide2
-          </div>
-          <div
-            style={{
-              width: "160px",
-              textAlign: "center",
-              paddingTop: "10px",
-              color: "black",
-            }}
-          >
-            ahdfahsfsdfdfdfdsg
-            <br />
-            fdfsddsfsd
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          className="swiperbox"
-          style={{
-           
-            width: "160px",
-            height: "250px",
-            borderRadius: "12px",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "black",
-              width: "160px",
-              height: "160px",
-              color: "white",
-              borderRadius: "12px",
-            }}
-          >
-            slide3
-          </div>
-          <div
-            style={{
-              width: "160px",
-              textAlign: "center",
-              paddingTop: "10px",
-              color: "black",
-            }}
-          >
-            ahdfahsfsdfdfdfdsg
-            <br />
-            fdfsddsfsd
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          className="swiperbox"
-          style={{
-            
-            width: "160px",
-            height: "250px",
-            borderRadius: "12px",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "black",
-              width: "160px",
-              height: "160px",
-              color: "white",
-              borderRadius: "12px",
-            }}
-          >
-            slide4
-          </div>
-          <div
-            style={{
-              width: "160px",
-              textAlign: "center",
-              paddingTop: "10px",
-              color: "black",
-            }}
-          >
-            ahdfahsfsdfdfdfdsg
-            <br />
-            fdfsddsfsd
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          className="swiperbox"
-          style={{
-           
-            width: "160px",
-            height: "250px",
-            borderRadius: "12px",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "black",
-              width: "160px",
-              height: "160px",
-              color: "white",
-              borderRadius: "12px",
-            }}
-          >
-            slide5
-          </div>
-          <div
-            style={{
-              width: "160px",
-              textAlign: "center",
-              paddingTop: "10px",
-              color: "black",
-            }}
-          >
-            ahdfahsfsdfdfdfdsg
-            <br />
-            fdfsddsfsd
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          className="swiperbox"
-          style={{
-           
-            width: "160px",
-            height: "250px",
-            borderRadius: "12px",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "black",
-              width: "160px",
-              height: "160px",
-              color: "white",
-              borderRadius: "12px",
-            }}
-          >
-            slide6
-          </div>
-          <div
-            style={{
-              width: "160px",
-              textAlign: "center",
-              paddingTop: "10px",
-              color: "black",
-            }}
-          >
-            ahdfahsfsdfdfdfdsg
-            <br />
-            fdfsddsfsd
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          className="swiperbox"
-          style={{
-            
-            width: "160px",
-            height: "250px",
-            borderRadius: "12px",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "black",
-              width: "160px",
-              height: "160px",
-              color: "white",
-              borderRadius: "12px",
-            }}
-          >
-            slide7
-          </div>
-          <div
-            style={{
-              width: "160px",
-              textAlign: "center",
-              paddingTop: "10px",
-              color: "black",
-            }}
-          >
-            ahdfahsfsdfdfdfdsg
-            <br />
-            fdfsddsfsd
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          className="swiperbox"
-          style={{
-          
-            width: "160px",
-            height: "250px",
-            borderRadius: "12px",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "black",
-              width: "160px",
-              height: "160px",
-              color: "white",
-              borderRadius: "12px",
-            }}
-          >
-            slide8
-          </div>
-          <div
-            style={{
-              width: "160px",
-              textAlign: "center",
-              paddingTop: "10px",
-              color: "black",
-            }}
-          >
-            ahdfahsfsdfdfdfdsg
-            <br />
-            fdfsddsfsd
-          </div>
-        </SwiperSlide>
-      </Swiper>
+        {title}
+      </div>
+      <div
+        style={{
+          width: "160px",
+          textAlign: "center",
+          paddingTop: "10px",
+          color: "black",
+        }}
+      >
+        {title}
+        <br />
+        {description}
+      </div>
+    </div>
   );
 };
 export default SkillCard;
+
+// import React from 'react';
+
+// import { Card } from "antd";
+// const { Meta } = Card;
+// const SkillCard = (props) => {
+//   const { title, description } = props;
+//   return (
+//     <Card
+//       style={{
+//         width: "100%",
+//         height: "100%",
+//       }}
+//       cover={
+//         <img
+//           style={{ width: "100%", height: "100px" }}
+//           alt="example"
+//           src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+//         />
+//       }>
+//       <Meta
+//         title={title}
+//         description={description}
+//       />
+//     </Card>
+//   );
+// };
+// export default SkillCard;
