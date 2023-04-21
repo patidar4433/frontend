@@ -33,31 +33,3 @@ const SkillCard = (props) => {
   );
 };
 export default SkillCard;
-
-// import React from 'react';
-
-// import { Card } from "antd";
-// const { Meta } = Card;
-// const SkillCard = (props) => {
-//   const { title, description } = props;
-//   return (
-//     <Card
-//       style={{
-//         width: "100%",
-//         height: "100%",
-//       }}
-//       cover={
-//         <img
-//           style={{ width: "100%", height: "100px" }}
-//           alt="example"
-//           src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-//         />
-//       }>
-//       <Meta
-//         title={title}
-//         description={description}
-//       />
-//     </Card>
-//   );
-// };
-// export default SkillCard;
